@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *tempLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mainLabel;
 
+/**
+ *  send to Server http://api.openweathermap.org with parameters
+ */
 - (void)sendToServer;
 
 @end
@@ -22,12 +25,18 @@
 @interface RCWeaterViewController (TextField) <UITextFieldDelegate>
 
 - (IBAction)textFieldChanged:(id)sender;
+/**
+ *  @return text textField.text
+ */
 - (NSString *)text;
 
 @end
 
 @interface RCWeaterViewController (Tap)
 
+/**
+ *  add UITapGestureRecognizer to view from hide keyboard if need
+ */
 - (void)addTap;
 
 @end
@@ -35,6 +44,9 @@
 @interface RCWeaterViewController (UI)
 
 - (void)hideKeyBoard;
+/**
+ *  prepare visible load data weather
+ */
 - (void)prepareMap:(id)object;
 
 @end

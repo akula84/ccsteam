@@ -10,6 +10,9 @@
 
 @interface RCRouter : NSObject
 
+/**
+ *  show RCWeaterViewController
+ */
 + (void)showWeater;
 
 @end

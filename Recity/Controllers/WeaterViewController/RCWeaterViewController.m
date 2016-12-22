@@ -42,7 +42,9 @@
     NSString *text = self.text;
     return text.isFull ? @{@"q":text} :self.coordinateParameters;
 }
-
+/**
+ *  Parameters location
+ */
 - (NSDictionary *)coordinateParameters{
     CLLocationCoordinate2D coordinate = self.locationManager.location.coordinate;
     return @{@"lat":@(coordinate.latitude),@"lon":@(coordinate.longitude)};

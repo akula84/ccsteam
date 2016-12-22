@@ -11,6 +11,9 @@
 #import "API_Protected.h"
 #import "RCMap+CoreDataClass.h"
 
+/**
+ *  @return weater from name q http://api.openweathermap.org/data/2.5/weather
+ */
 @implementation RCGetWeater
 
 - (NSString *)path{

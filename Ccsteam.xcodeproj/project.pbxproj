@@ -46,7 +46,6 @@
 		836007B21E0B7FA100B3355E /* NSObject+SingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 836007B11E0B7FA100B3355E /* NSObject+SingletonObject.m */; };
 		836007B61E0B7FF100B3355E /* AppProtection.m in Sources */ = {isa = PBXBuildFile; fileRef = 836007B51E0B7FF100B3355E /* AppProtection.m */; };
 		83C8423E1D0559150051B007 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C8423D1D0559150051B007 /* UIViewController+Utils.m */; };
-		83E4DDFB1D0A883700EAED95 /* CounterTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E4DDFA1D0A883700EAED95 /* CounterTime.m */; };
 		842933A41CB681AE001198DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842933A31CB681AE001198DE /* main.m */; };
 		842933A71CB681AE001198DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842933A61CB681AE001198DE /* AppDelegate.m */; };
 		842933B01CB681AF001198DE /* Recity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 842933AE1CB681AF001198DE /* Recity.xcdatamodeld */; };
@@ -135,8 +134,6 @@
 		836007B51E0B7FF100B3355E /* AppProtection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppProtection.m; path = Utils/Singleton/AppProtection/AppProtection.m; sourceTree = "<group>"; };
 		83C8423C1D0559150051B007 /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
 		83C8423D1D0559150051B007 /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
-		83E4DDF91D0A883700EAED95 /* CounterTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterTime.h; sourceTree = "<group>"; };
-		83E4DDFA1D0A883700EAED95 /* CounterTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterTime.m; sourceTree = "<group>"; };
 		8429339F1CB681AE001198DE /* Ccsteam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ccsteam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842933A31CB681AE001198DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		842933A51CB681AE001198DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -414,7 +411,6 @@
 				832D1D7A1D081EF600E12FF1 /* API */,
 				83BB3A571CFBE7C1008F16FA /* Base objects extensions */,
 				83BB3A671CFBEA54008F16FA /* Constants */,
-				83E4DDF81D0A883000EAED95 /* CounterTime */,
 				83BB3A5C1CFBE8AC008F16FA /* Reachability */,
 			);
 			path = Helpers;
@@ -498,15 +494,6 @@
 				833DAFA11E0BBD9900F335B6 /* Router */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		83E4DDF81D0A883000EAED95 /* CounterTime */ = {
-			isa = PBXGroup;
-			children = (
-				83E4DDF91D0A883700EAED95 /* CounterTime.h */,
-				83E4DDFA1D0A883700EAED95 /* CounterTime.m */,
-			);
-			name = CounterTime;
 			sourceTree = "<group>";
 		};
 		842933961CB681AE001198DE = {
@@ -735,7 +722,6 @@
 				842CDC2D1CB6CEEF0027543E /* RCConstants.m in Sources */,
 				83076A141E0BFFF900628E50 /* RCMap+CoreDataProperties.m in Sources */,
 				832D1D941D081F0B00E12FF1 /* API+TokenExpired.m in Sources */,
-				83E4DDFB1D0A883700EAED95 /* CounterTime.m in Sources */,
 				83076A051E0BF68800628E50 /* RCWeather+CoreDataProperties.m in Sources */,
 				83076A131E0BFFF900628E50 /* RCMap+CoreDataClass.m in Sources */,
 				842933B01CB681AF001198DE /* Recity.xcdatamodeld in Sources */,
