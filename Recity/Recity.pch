@@ -1,0 +1,35 @@
+//
+//  Recity.pch
+//  Recity
+//
+//  Created by Dmitriy Doroschuk on 07.04.16.
+//  Copyright © 2016 Recity. All rights reserved.
+//
+
+#ifndef Recity_pch
+#define Recity_pch
+
+#import "RCConstants.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import <PromiseKit/PromiseKit.h>
+#import "Utils.h"
+#import "Utils.h"
+#import <extobjc.h>
+
+#import "RCTransformer.h"
+#import "AppDelegate.h"
+#import "AppState.h"
+
+#import "UIViewController+Storyboard.h"
+#import "UIView+More.h"
+#import "UICollectionViewCell+More.h"
+#import "UITableViewCell+More.h"
+#import "NSObject+ClassName.h"
+#import "NSManagedObject+More.h"
+#import "NSManagedObject+Debug.h"
+#import "NSArray+More.h"
+#import "UIImageView+SDWebImageMore.h"
+#import "NSDate+More.h"
+#import "UIColor+RCScheme.h"
+
+#endif /* Recity_pch */

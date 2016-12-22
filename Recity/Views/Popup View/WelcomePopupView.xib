@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Flama-Basic.otf">
+            <string>Flama-Basic</string>
+        </mutableArray>
+        <mutableArray key="Flama-Book.otf">
+            <string>Flama-Book</string>
+            <string>Flama-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ObS-Fl-ALG" customClass="WelcomePopupView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                    <rect key="frame" x="150" y="112" width="300" height="377"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0q-cc-nFG">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="55"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Recity!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdO-k6-uHT">
+                                    <rect key="frame" x="8" y="13" width="284" height="28"/>
+                                    <fontDescription key="fontDescription" name="Flama-Basic" family="Flama" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.1843137255" green="0.20784313730000001" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="RdO-k6-uHT" secondAttribute="bottom" constant="14" id="228-9L-vsp"/>
+                                <constraint firstAttribute="width" constant="300" id="4gB-md-O2D"/>
+                                <constraint firstAttribute="height" constant="55" id="D1j-8O-vlY"/>
+                                <constraint firstItem="RdO-k6-uHT" firstAttribute="top" secondItem="u0q-cc-nFG" secondAttribute="top" constant="13" id="tpn-kO-dDz"/>
+                                <constraint firstItem="RdO-k6-uHT" firstAttribute="leading" secondItem="u0q-cc-nFG" secondAttribute="leading" constant="8" id="uWj-xN-Qu4"/>
+                                <constraint firstAttribute="trailing" secondItem="RdO-k6-uHT" secondAttribute="trailing" constant="8" id="ueD-yg-BY4"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qM5-Yy-upn" customClass="RoundedButton">
+                            <rect key="frame" x="40" y="289" width="220" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="7Tl-Gd-Ve4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="15"/>
+                            <state key="normal" title="Got it">
+                                <color key="titleColor" red="0.1843137255" green="0.20784313730000001" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gotitAction" destination="ObS-Fl-ALG" eventType="touchUpInside" id="FP7-wG-GJk"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TQ-F7-o53">
+                            <rect key="frame" x="40" y="85" width="220" height="164"/>
+                            <string key="text">Lorem ipsum dolor sit amet-consectetur adipiscing elit sed do eiusmod non piscis figore dotom aliqua. tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</string>
+                            <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="17"/>
+                            <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="u0q-cc-nFG" secondAttribute="trailing" id="4GF-5O-Yxb"/>
+                        <constraint firstItem="5TQ-F7-o53" firstAttribute="top" secondItem="u0q-cc-nFG" secondAttribute="bottom" constant="30" id="CdI-4j-P9J"/>
+                        <constraint firstAttribute="trailing" secondItem="qM5-Yy-upn" secondAttribute="trailing" constant="40" id="VjG-X2-i9p"/>
+                        <constraint firstItem="u0q-cc-nFG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bLT-L8-yyH"/>
+                        <constraint firstItem="qM5-Yy-upn" firstAttribute="top" secondItem="5TQ-F7-o53" secondAttribute="bottom" constant="40" id="f6F-yR-Lno"/>
+                        <constraint firstAttribute="bottom" secondItem="qM5-Yy-upn" secondAttribute="bottom" constant="40" id="jho-8D-FIQ"/>
+                        <constraint firstItem="qM5-Yy-upn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="or4-99-U0l"/>
+                        <constraint firstItem="5TQ-F7-o53" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="rPo-yY-rIe"/>
+                        <constraint firstAttribute="trailing" secondItem="5TQ-F7-o53" secondAttribute="trailing" constant="40" id="wY3-2e-ck1"/>
+                        <constraint firstItem="u0q-cc-nFG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yeA-cf-wgr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70201646959459463" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="centerX" secondItem="ObS-Fl-ALG" secondAttribute="centerX" id="15j-Bd-JYo"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ObS-Fl-ALG" secondAttribute="top" constant="40" id="4n8-Id-Oxk"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="40" id="fX2-sR-u3b"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="centerY" secondItem="ObS-Fl-ALG" secondAttribute="centerY" id="tKS-WS-g6X"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="qM5-Yy-upn" id="WZ7-Hs-85U"/>
+                <outlet property="popupContentView" destination="iN0-l3-epB" id="WDN-BB-MRY"/>
+            </connections>
+            <point key="canvasLocation" x="498" y="305"/>
+        </view>
+    </objects>
+</document>

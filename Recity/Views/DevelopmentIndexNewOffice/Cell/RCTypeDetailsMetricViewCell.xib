@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Flama-Basic.otf">
+            <string>Flama-Basic</string>
+            <string>Flama-Basic</string>
+            <string>Flama-Basic</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RCTypeDetailsMetricViewCell">
+            <connections>
+                <outlet property="betweenConstraint" destination="msX-q2-9wy" id="2mb-iO-vGE"/>
+                <outlet property="labelDescription" destination="7s8-aF-ORq" id="ejB-3j-vmi"/>
+                <outlet property="labelDescriptionDuble" destination="1LU-oE-TgC" id="5iA-tj-js3"/>
+                <outlet property="leftConstraint" destination="HPJ-LM-8fV" id="RNd-Wa-ieE"/>
+                <outlet property="rightConstraint" destination="nJm-av-24w" id="W0u-fS-M6I"/>
+                <outlet property="titleLabel" destination="BRE-h9-c04" id="N1D-MJ-1ei"/>
+                <outlet property="viewGraph" destination="eNh-eh-Fh0" id="rfi-pb-LML"/>
+                <outlet property="widthLabelConstraint" destination="CsV-BC-r8c" id="apY-8y-kNM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLANNED" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRE-h9-c04">
+                    <rect key="frame" x="198" y="-1" width="95" height="27"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="5n0-Vg-MB4"/>
+                        <constraint firstAttribute="width" constant="95" id="CsV-BC-r8c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Flama-Basic" family="Flama" pointSize="11"/>
+                    <color key="textColor" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LU-oE-TgC">
+                    <rect key="frame" x="35" y="4" width="35" height="17"/>
+                    <fontDescription key="fontDescription" name="Flama-Basic" family="Flama" pointSize="14"/>
+                    <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNh-eh-Fh0">
+                    <rect key="frame" x="24" y="0.0" width="74" height="25"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7s8-aF-ORq">
+                            <rect key="frame" x="11" y="4" width="35" height="17"/>
+                            <fontDescription key="fontDescription" name="Flama-Basic" family="Flama" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="UZp-pW-SZ1"/>
+                        <constraint firstItem="7s8-aF-ORq" firstAttribute="leading" secondItem="eNh-eh-Fh0" secondAttribute="leading" constant="11" id="oDv-BR-mhb"/>
+                        <constraint firstItem="7s8-aF-ORq" firstAttribute="centerY" secondItem="eNh-eh-Fh0" secondAttribute="centerY" id="s5c-8k-xhh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BRE-h9-c04" firstAttribute="centerY" secondItem="eNh-eh-Fh0" secondAttribute="centerY" id="3Cy-lz-P1h"/>
+                <constraint firstItem="1LU-oE-TgC" firstAttribute="centerY" secondItem="7s8-aF-ORq" secondAttribute="centerY" id="4un-rb-BDc"/>
+                <constraint firstItem="eNh-eh-Fh0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="HPJ-LM-8fV"/>
+                <constraint firstItem="eNh-eh-Fh0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gKv-gT-f3Q"/>
+                <constraint firstItem="BRE-h9-c04" firstAttribute="leading" secondItem="eNh-eh-Fh0" secondAttribute="trailing" constant="100" id="msX-q2-9wy"/>
+                <constraint firstAttribute="trailing" secondItem="BRE-h9-c04" secondAttribute="trailing" constant="27" id="nJm-av-24w"/>
+                <constraint firstItem="1LU-oE-TgC" firstAttribute="leading" secondItem="7s8-aF-ORq" secondAttribute="leading" id="s2M-zI-HTD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

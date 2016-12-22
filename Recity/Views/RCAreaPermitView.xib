@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RCAreaPermitView">
+            <connections>
+                <outlet property="oneAgoView" destination="7hi-hd-tqB" id="wj5-jw-Qnf"/>
+                <outlet property="threeAgoView" destination="h54-8g-wRp" id="n6O-w0-k5R"/>
+                <outlet property="twoAgoView" destination="UbF-h6-V9E" id="BUg-Ck-igX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="263"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hi-hd-tqB" customClass="RCAreaPermitCell">
+                    <rect key="frame" x="66" y="0.0" width="81" height="263"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="263" id="dTH-16-vrm"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="2-3"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showLeftTitle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UbF-h6-V9E" customClass="RCAreaPermitCell">
+                    <rect key="frame" x="147" y="0.0" width="81" height="263"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="263" id="S5Z-dh-bOR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="1-2"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h54-8g-wRp" customClass="RCAreaPermitCell">
+                    <rect key="frame" x="228" y="0.0" width="81" height="263"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="263" id="gOG-OS-hPv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="&lt;1"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7hi-hd-tqB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="81:320" id="5Zw-iu-sO9"/>
+                <constraint firstItem="h54-8g-wRp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OJ1-90-ZUc"/>
+                <constraint firstItem="h54-8g-wRp" firstAttribute="width" secondItem="7hi-hd-tqB" secondAttribute="width" id="S60-do-lJM"/>
+                <constraint firstItem="UbF-h6-V9E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XCe-NN-aqd"/>
+                <constraint firstItem="UbF-h6-V9E" firstAttribute="width" secondItem="7hi-hd-tqB" secondAttribute="width" id="Xzg-e7-dUH"/>
+                <constraint firstItem="7hi-hd-tqB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YgC-9t-EbW"/>
+                <constraint firstItem="UbF-h6-V9E" firstAttribute="leading" secondItem="7hi-hd-tqB" secondAttribute="trailing" id="YtP-wu-XIX"/>
+                <constraint firstAttribute="trailing" secondItem="h54-8g-wRp" secondAttribute="trailing" constant="11" id="sBn-St-BU5"/>
+                <constraint firstItem="h54-8g-wRp" firstAttribute="leading" secondItem="UbF-h6-V9E" secondAttribute="trailing" id="uhY-iA-9sk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

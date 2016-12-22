@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="RCBaseModel" representedClassName="RCBaseModel" syncable="YES"/>
+    <entity name="RCFavoritedProjectInfo" representedClassName="RCFavoritedProjectInfo" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="projectUID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="userinfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RCUserInfo" inverseName="favoritedProjectInfos" inverseEntity="RCUserInfo" syncable="YES"/>
+    </entity>
+    <entity name="RCImage" representedClassName="RCImage" parentEntity="RCBaseModel" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="imageProjects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RCProject" inverseName="images" inverseEntity="RCProject" syncable="YES"/>
+        <relationship name="previewImageProjects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RCProject" inverseName="previewImage" inverseEntity="RCProject" syncable="YES"/>
+    </entity>
+    <entity name="RCPoint" representedClassName="RCPoint" parentEntity="RCBaseModel" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RCProject" inverseName="centerPoint" inverseEntity="RCProject" syncable="YES"/>
+        <relationship name="shapes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RCShape" inverseName="shapePoints" inverseEntity="RCShape" syncable="YES"/>
+    </entity>
+    <entity name="RCProject" representedClassName="RCProject" parentEntity="RCBaseModel" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="architectsData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="buildingSize" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="completionDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="completionTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="constructionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="developersData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="developmentIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="estimatedBuildingSize" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="estimatedFloorCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="floorCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="landSize" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="centerPoint" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RCPoint" inverseName="project" inverseEntity="RCPoint" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RCImage" inverseName="imageProjects" inverseEntity="RCImage" syncable="YES"/>
+        <relationship name="previewImage" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RCImage" inverseName="previewImageProjects" inverseEntity="RCImage" syncable="YES"/>
+        <relationship name="recenterUsers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RCUser" inverseName="recentProjects" inverseEntity="RCUser" syncable="YES"/>
+        <relationship name="shapes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RCShape" inverseName="shapeProjects" inverseEntity="RCShape" syncable="YES"/>
+        <relationship name="tenants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RCTenant" inverseName="projects" inverseEntity="RCTenant" syncable="YES"/>
+        <relationship name="typeDetails" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RCTypeDetails" inverseName="projects" inverseEntity="RCTypeDetails" syncable="YES"/>
+    </entity>
+    <entity name="RCRequest" representedClassName="RCRequest" parentEntity="RCBaseModel" syncable="YES"/>
+    <entity name="RCShape" representedClassName="RCShape" parentEntity="RCBaseModel" syncable="YES">
+        <relationship name="shapePoints" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="RCPoint" inverseName="shapes" inverseEntity="RCPoint" syncable="YES"/>
+        <relationship name="shapeProjects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RCProject" inverseName="shapes" inverseEntity="RCProject" syncable="YES"/>
+    </entity>
+    <entity name="RCTenant" representedClassName="RCTenant" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="projects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RCProject" inverseName="tenants" inverseEntity="RCProject" syncable="YES"/>
+    </entity>
+    <entity name="RCTileOverlayCache" representedClassName="RCTileOverlayCache" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="x" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="z" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="RCTypeDetails" representedClassName="RCTypeDetails" parentEntity="RCBaseModel" syncable="YES">
+        <attribute name="apartments" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="condominiums" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="entertainment" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="estimatedNumberOfResidentialUnits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="estimatedRetailSize" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hotel" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="numberOfHotelRooms" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="numberOfParkingSpaces" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="numberOfResidentialUnits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="numberOfSeats" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="office" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="officeSize" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="otherType" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="residentialTbd" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="retail" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="retailSize" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="projects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RCProject" inverseName="typeDetails" inverseEntity="RCProject" syncable="YES"/>
+    </entity>
+    <entity name="RCUser" representedClassName="RCUser" parentEntity="RCBaseModel" syncable="YES">
+        <attribute name="authorizationToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recentProjects" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="RCProject" inverseName="recenterUsers" inverseEntity="RCProject" syncable="YES"/>
+        <relationship name="userinfo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RCUserInfo" inverseName="user" inverseEntity="RCUserInfo" syncable="YES"/>
+    </entity>
+    <entity name="RCUserInfo" representedClassName="RCUserInfo" syncable="YES">
+        <relationship name="favoritedProjectInfos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RCFavoritedProjectInfo" inverseName="userinfo" inverseEntity="RCFavoritedProjectInfo" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RCUser" inverseName="userinfo" inverseEntity="RCUser" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RCBaseModel" positionX="-1998" positionY="-4563" width="128" height="45"/>
+        <element name="RCImage" positionX="-1739" positionY="-4491" width="128" height="120"/>
+        <element name="RCPoint" positionX="-1640" positionY="-4581" width="128" height="103"/>
+        <element name="RCProject" positionX="-2018" positionY="-4431" width="128" height="375"/>
+        <element name="RCRequest" positionX="-2214" positionY="-4462" width="128" height="45"/>
+        <element name="RCShape" positionX="-1838" positionY="-4581" width="128" height="75"/>
+        <element name="RCTenant" positionX="-2007" positionY="-4500" width="128" height="90"/>
+        <element name="RCTileOverlayCache" positionX="-2007" positionY="-4500" width="128" height="105"/>
+        <element name="RCTypeDetails" positionX="-1701" positionY="-4347" width="128" height="300"/>
+        <element name="RCUser" positionX="-2214" positionY="-4653" width="128" height="150"/>
+        <element name="RCFavoritedProjectInfo" positionX="-2007" positionY="-4500" width="128" height="135"/>
+        <element name="RCUserInfo" positionX="-1998" positionY="-4491" width="128" height="75"/>
+    </elements>
+</model>

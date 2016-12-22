@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RCSegmentedSelectorCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="35"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xff-Om-tlE">
+                        <rect key="frame" x="0.0" y="0.0" width="384" height="20"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrG-ab-inR">
+                                <rect key="frame" x="2" y="0.0" width="380" height="20"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WrG-ab-inR" firstAttribute="leading" secondItem="Xff-Om-tlE" secondAttribute="leading" constant="2" id="2I4-AN-BI7"/>
+                            <constraint firstAttribute="bottom" secondItem="WrG-ab-inR" secondAttribute="bottom" id="6Mr-ad-HdY"/>
+                            <constraint firstItem="WrG-ab-inR" firstAttribute="top" secondItem="Xff-Om-tlE" secondAttribute="top" id="dyj-Bv-3Vj"/>
+                            <constraint firstAttribute="height" constant="20" id="lRn-oI-75X"/>
+                            <constraint firstAttribute="trailing" secondItem="WrG-ab-inR" secondAttribute="trailing" constant="2" id="uiM-4N-0Bp"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selector_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="xW7-kh-AQH">
+                        <rect key="frame" x="182" y="20" width="20" height="10"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xW7-kh-AQH" firstAttribute="centerX" secondItem="Xff-Om-tlE" secondAttribute="centerX" id="Q9v-aF-e8o"/>
+                <constraint firstItem="Xff-Om-tlE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gWg-bY-hQg"/>
+                <constraint firstItem="xW7-kh-AQH" firstAttribute="top" secondItem="Xff-Om-tlE" secondAttribute="bottom" id="hZy-vu-FXU"/>
+                <constraint firstItem="Xff-Om-tlE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="i36-aJ-oui"/>
+                <constraint firstAttribute="trailing" secondItem="Xff-Om-tlE" secondAttribute="trailing" id="w6q-2S-uy6"/>
+            </constraints>
+            <size key="customSize" width="384" height="35"/>
+            <connections>
+                <outlet property="arrowView" destination="xW7-kh-AQH" id="pI2-Rh-oiU"/>
+                <outlet property="barView" destination="WrG-ab-inR" id="Dk4-sq-goZ"/>
+            </connections>
+            <point key="canvasLocation" x="549" y="668.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="selector_arrow" width="20" height="10"/>
+    </resources>
+</document>

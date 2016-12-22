@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Flama-Basic.otf">
+            <string>Flama-Basic</string>
+        </array>
+        <array key="Flama-Book.otf">
+            <string>Flama-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RCThankSuggestionViewController">
+            <connections>
+                <outlet property="describingLabel" destination="dgb-95-5d5" id="wIB-hH-P8k"/>
+                <outlet property="nameLabel" destination="evP-6P-ltJ" id="8ng-D4-AW5"/>
+                <outlet property="navigationItem" destination="3Ie-9X-hh3" id="NFK-tA-DyU"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Wyf-Ye-NYq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for your suggestion!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrT-cE-Pqa">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="194" id="Cdi-8S-zf9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="15"/>
+                    <color key="textColor" red="0.22745098039215686" green="0.22745098039215686" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Ring Building" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evP-6P-ltJ" customClass="RCSpacedLabel">
+                    <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="13"/>
+                    <color key="textColor" red="0.1803921568627451" green="0.19215686274509802" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                            <real key="value" value="0.02"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1200 18th St NW 20036" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-95-5d5" customClass="RCSpacedLabel">
+                    <fontDescription key="fontDescription" name="Flama-Basic" family="Flama" pointSize="9"/>
+                    <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                            <real key="value" value="0.02"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ic-sO-D6p">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7Ef-wc-Lll"/>
+                    </constraints>
+                    <string key="text">We appreciate you taking the time to suggest an edit. If you have any other questions or comments, please use the Contact Us form in the app menu.</string>
+                    <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="12"/>
+                    <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThV-AO-rpp" customClass="RoundedButton">
+                    <color key="backgroundColor" red="0.1803921568627451" green="0.19215686274509802" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3SM-P7-gAg"/>
+                        <constraint firstAttribute="width" constant="140" id="BKh-bK-iy4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="13"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="close" destination="-1" eventType="touchUpInside" id="B3w-M1-92w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jrT-cE-Pqa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="1UR-FL-bEe"/>
+                <constraint firstItem="dgb-95-5d5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="6Tn-1x-T7q"/>
+                <constraint firstItem="evP-6P-ltJ" firstAttribute="top" secondItem="jrT-cE-Pqa" secondAttribute="bottom" constant="3" id="BUj-Rl-WJW"/>
+                <constraint firstItem="ThV-AO-rpp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="D9i-gc-yoE"/>
+                <constraint firstItem="evP-6P-ltJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="DDD-eM-uyP"/>
+                <constraint firstAttribute="trailing" secondItem="evP-6P-ltJ" secondAttribute="trailing" constant="16" id="JaA-qb-QhU"/>
+                <constraint firstAttribute="trailing" secondItem="dgb-95-5d5" secondAttribute="trailing" constant="16" id="SHm-it-kbI"/>
+                <constraint firstItem="ThV-AO-rpp" firstAttribute="top" secondItem="6Ic-sO-D6p" secondAttribute="bottom" constant="37" id="UPW-9F-AiW"/>
+                <constraint firstAttribute="trailing" secondItem="6Ic-sO-D6p" secondAttribute="trailing" constant="32" id="W5u-y0-wGI"/>
+                <constraint firstItem="6Ic-sO-D6p" firstAttribute="top" secondItem="dgb-95-5d5" secondAttribute="bottom" constant="14" id="XwB-Yw-juP"/>
+                <constraint firstItem="jrT-cE-Pqa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="iKJ-NQ-puh"/>
+                <constraint firstItem="6Ic-sO-D6p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="jxO-aY-jkN"/>
+                <constraint firstItem="dgb-95-5d5" firstAttribute="top" secondItem="evP-6P-ltJ" secondAttribute="bottom" constant="3" id="mBn-rU-1lR"/>
+            </constraints>
+            <point key="canvasLocation" x="666" y="428"/>
+        </view>
+        <navigationItem title="Title" id="3Ie-9X-hh3">
+            <barButtonItem key="leftBarButtonItem" image="back" id="Hz7-L6-ivR">
+                <connections>
+                    <action selector="back" destination="-1" id="ksl-4C-aT9"/>
+                </connections>
+            </barButtonItem>
+            <barButtonItem key="rightBarButtonItem" image="cancel" id="wiv-Zd-xKF">
+                <connections>
+                    <action selector="close" destination="-1" id="xWe-gj-3GH"/>
+                </connections>
+            </barButtonItem>
+            <connections>
+                <outlet property="titleView" destination="o3b-gJ-dKJ" id="CB9-yI-X2f"/>
+            </connections>
+        </navigationItem>
+        <view contentMode="scaleToFill" id="o3b-gJ-dKJ">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggest An Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lq9-WF-TM7">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104" id="LkC-D9-YFV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="15"/>
+                    <color key="textColor" red="0.1803921568627451" green="0.19215686274509802" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Lq9-WF-TM7" firstAttribute="centerY" secondItem="o3b-gJ-dKJ" secondAttribute="centerY" id="Hdt-vv-O91"/>
+                <constraint firstItem="Lq9-WF-TM7" firstAttribute="centerX" secondItem="o3b-gJ-dKJ" secondAttribute="centerX" id="To9-CH-BUP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1082" y="350.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="16" height="16"/>
+        <image name="cancel" width="14" height="14"/>
+    </resources>
+</document>

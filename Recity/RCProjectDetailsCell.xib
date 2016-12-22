@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Flama-Basic.otf">
+            <string>Flama-Basic</string>
+        </mutableArray>
+        <mutableArray key="Flama-Book.otf">
+            <string>Flama-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RCProjectDetailsCell" id="WvX-KJ-pPu" customClass="RCProjectDetailsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WvX-KJ-pPu" id="4AW-GH-Ij4">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="251" text="Under Construction" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYc-zu-4EX">
+                        <rect key="frame" x="76" y="19" width="224" height="16"/>
+                        <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="13"/>
+                        <color key="textColor" red="0.46274509803921571" green="0.46666666666666667" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="251" text="STATUS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTl-Ld-gTu">
+                        <rect key="frame" x="76" y="8" width="224" height="11"/>
+                        <fontDescription key="fontDescription" name="Flama-Basic" family="Flama" pointSize="9"/>
+                        <color key="textColor" red="0.46274509803921571" green="0.46666666666666667" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hammer_orange_small" translatesAutoresizingMaskIntoConstraints="NO" id="zBS-XK-FmF">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="1a4-pD-NTs"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jYc-zu-4EX" firstAttribute="width" secondItem="yTl-Ld-gTu" secondAttribute="width" id="97D-n2-FNM"/>
+                    <constraint firstItem="zBS-XK-FmF" firstAttribute="top" secondItem="4AW-GH-Ij4" secondAttribute="top" id="OwY-5d-EiJ"/>
+                    <constraint firstAttribute="trailing" secondItem="yTl-Ld-gTu" secondAttribute="trailing" constant="20" id="WBj-0R-5it"/>
+                    <constraint firstItem="yTl-Ld-gTu" firstAttribute="top" secondItem="4AW-GH-Ij4" secondAttribute="top" constant="8" id="aMk-69-yfD"/>
+                    <constraint firstItem="jYc-zu-4EX" firstAttribute="top" secondItem="yTl-Ld-gTu" secondAttribute="bottom" id="gcY-mc-HuY"/>
+                    <constraint firstItem="zBS-XK-FmF" firstAttribute="leading" secondItem="4AW-GH-Ij4" secondAttribute="leading" id="pox-eF-38u"/>
+                    <constraint firstAttribute="bottom" secondItem="zBS-XK-FmF" secondAttribute="bottom" id="rPS-OP-lwj"/>
+                    <constraint firstItem="yTl-Ld-gTu" firstAttribute="leading" secondItem="zBS-XK-FmF" secondAttribute="trailing" constant="26" id="v1r-yo-xjj"/>
+                    <constraint firstItem="jYc-zu-4EX" firstAttribute="centerX" secondItem="yTl-Ld-gTu" secondAttribute="centerX" id="xFT-pl-89H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="describingLabel" destination="jYc-zu-4EX" id="mtx-PB-gsv"/>
+                <outlet property="leftImageView" destination="zBS-XK-FmF" id="XUg-JI-7uV"/>
+                <outlet property="nameLabel" destination="yTl-Ld-gTu" id="78n-oU-7hg"/>
+            </connections>
+            <point key="canvasLocation" x="357" y="371.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hammer_orange_small" width="17" height="17"/>
+    </resources>
+</document>

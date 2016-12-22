@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Flama-Book.otf">
+            <string>Flama-Book</string>
+            <string>Flama-Book</string>
+            <string>Flama-Book</string>
+            <string>Flama-Book</string>
+            <string>Flama-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RCUserNotesViewController">
+            <connections>
+                <outlet property="deleteButton" destination="Ke0-ke-UIj" id="2V4-fV-38u"/>
+                <outlet property="navigationItem" destination="Sc3-Kz-o2U" id="g0n-1W-a6n"/>
+                <outlet property="saveButton" destination="dA6-Ll-XO2" id="T1E-MQ-smd"/>
+                <outlet property="textNotesView" destination="EOn-bl-AKx" id="VIM-pm-ctP"/>
+                <outlet property="view" destination="z8j-Yh-ZQ2" id="ilZ-K4-7xf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <navigationItem id="Sc3-Kz-o2U">
+            <nil key="title"/>
+            <barButtonItem key="leftBarButtonItem" id="piE-Pa-nvM">
+                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cZl-iO-Tx9">
+                    <rect key="frame" x="16" y="7" width="71" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="13"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.1803921568627451" green="0.19215686274509802" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelAction" destination="-1" eventType="touchUpInside" id="uJk-xp-3yG"/>
+                    </connections>
+                </button>
+            </barButtonItem>
+            <view key="titleView" contentMode="scaleToFill" id="PLL-Cz-3nn">
+                <rect key="frame" x="96" y="6" width="128" height="33"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eh-IM-PxF">
+                        <rect key="frame" x="28" y="6" width="72" height="21"/>
+                        <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="15"/>
+                        <color key="textColor" red="0.1803921568627451" green="0.19215686274509802" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <barButtonItem key="rightBarButtonItem" id="gYN-bN-qXw">
+                <button key="customView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dA6-Ll-XO2">
+                    <rect key="frame" x="233" y="7" width="71" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="13"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" red="0.1803921568627451" green="0.19215686274509802" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="saveAction" destination="-1" eventType="touchUpInside" id="gGa-VO-O0l"/>
+                    </connections>
+                </button>
+            </barButtonItem>
+        </navigationItem>
+        <view contentMode="scaleToFill" id="z8j-Yh-ZQ2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fp6-JX-p3D">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAK-pw-NKJ" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-bl-AKx" customClass="RCPlaceholderTextView">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Add a note..."/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="NMV-av-QqH"/>
+                                    </connections>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="EOn-bl-AKx" secondAttribute="trailing" id="e0M-oj-Fqy"/>
+                                <constraint firstAttribute="bottom" secondItem="EOn-bl-AKx" secondAttribute="bottom" id="glR-5Y-G2R"/>
+                                <constraint firstItem="EOn-bl-AKx" firstAttribute="top" secondItem="VAK-pw-NKJ" secondAttribute="top" id="oPq-mt-6VA"/>
+                                <constraint firstItem="EOn-bl-AKx" firstAttribute="leading" secondItem="VAK-pw-NKJ" secondAttribute="leading" id="qEs-TK-NVP"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VAK-pw-NKJ" firstAttribute="leading" secondItem="Fp6-JX-p3D" secondAttribute="leading" id="EK0-Uq-URH"/>
+                        <constraint firstAttribute="bottom" secondItem="VAK-pw-NKJ" secondAttribute="bottom" id="Thg-yf-YlS"/>
+                        <constraint firstItem="VAK-pw-NKJ" firstAttribute="width" secondItem="Fp6-JX-p3D" secondAttribute="width" id="d06-aP-5il"/>
+                        <constraint firstItem="VAK-pw-NKJ" firstAttribute="top" secondItem="Fp6-JX-p3D" secondAttribute="top" id="eY6-Ud-fvo"/>
+                        <constraint firstAttribute="trailing" secondItem="VAK-pw-NKJ" secondAttribute="trailing" id="uYJ-yr-ntI"/>
+                        <constraint firstItem="VAK-pw-NKJ" firstAttribute="height" secondItem="Fp6-JX-p3D" secondAttribute="height" id="wEd-LI-TWI"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Fp6-JX-p3D" firstAttribute="top" secondItem="z8j-Yh-ZQ2" secondAttribute="top" id="1x8-lM-WXm"/>
+                <constraint firstItem="Fp6-JX-p3D" firstAttribute="leading" secondItem="z8j-Yh-ZQ2" secondAttribute="leading" id="VlL-s7-jPe"/>
+                <constraint firstAttribute="trailing" secondItem="Fp6-JX-p3D" secondAttribute="trailing" id="inT-pJ-tlB"/>
+                <constraint firstAttribute="bottom" secondItem="Fp6-JX-p3D" secondAttribute="bottom" id="xlx-vQ-9Uk"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="473" y="-190"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ke0-ke-UIj">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="13"/>
+            <state key="normal" title="Delete note">
+                <color key="titleColor" red="0.1803921568627451" green="0.19215686274509802" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            </state>
+            <connections>
+                <action selector="deleteAction" destination="-1" eventType="touchUpInside" id="5jB-K8-hqj"/>
+            </connections>
+            <point key="canvasLocation" x="517.5" y="250"/>
+        </button>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Flama-Book.otf">
+            <string>Flama-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RCLeftMenuCell" rowHeight="50" id="GPs-O1-c4j" customClass="RCLeftMenuCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GPs-O1-c4j" id="8Fl-fd-FiO">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuQuestion" translatesAutoresizingMaskIntoConstraints="NO" id="zpL-W6-gKE">
+                        <rect key="frame" x="0.0" y="0.0" width="62" height="49"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdI-cj-0vH">
+                        <rect key="frame" x="62" y="0.0" width="518" height="49"/>
+                        <fontDescription key="fontDescription" name="Flama-Book" family="Flama" pointSize="13"/>
+                        <color key="textColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8o-D3-xjw">
+                        <rect key="frame" x="0.0" y="48" width="600" height="1"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BrP-cS-U8q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="EdI-cj-0vH" firstAttribute="top" secondItem="8Fl-fd-FiO" secondAttribute="top" id="0v4-2c-HgE"/>
+                    <constraint firstAttribute="trailing" secondItem="l8o-D3-xjw" secondAttribute="trailing" id="66V-YE-Lh7"/>
+                    <constraint firstItem="EdI-cj-0vH" firstAttribute="leading" secondItem="zpL-W6-gKE" secondAttribute="trailing" id="FqR-4B-d64"/>
+                    <constraint firstItem="zpL-W6-gKE" firstAttribute="top" secondItem="8Fl-fd-FiO" secondAttribute="top" id="HuY-Yw-KNZ"/>
+                    <constraint firstAttribute="bottom" secondItem="EdI-cj-0vH" secondAttribute="bottom" id="QmQ-dz-j6b"/>
+                    <constraint firstItem="zpL-W6-gKE" firstAttribute="leading" secondItem="8Fl-fd-FiO" secondAttribute="leading" id="S8U-AR-eZU"/>
+                    <constraint firstAttribute="trailing" secondItem="EdI-cj-0vH" secondAttribute="trailing" constant="20" id="Wp8-ux-MIc"/>
+                    <constraint firstItem="l8o-D3-xjw" firstAttribute="leading" secondItem="8Fl-fd-FiO" secondAttribute="leading" id="X2R-e5-z7A"/>
+                    <constraint firstItem="EdI-cj-0vH" firstAttribute="leading" secondItem="8Fl-fd-FiO" secondAttribute="leading" constant="62" id="Ydi-VJ-41r"/>
+                    <constraint firstAttribute="bottom" secondItem="zpL-W6-gKE" secondAttribute="bottom" id="dkT-b6-8GQ"/>
+                    <constraint firstAttribute="bottom" secondItem="l8o-D3-xjw" secondAttribute="bottom" id="mel-Cy-UZs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="heightLineUp" destination="BrP-cS-U8q" id="OAh-fy-ZHO"/>
+                <outlet property="myImageView" destination="zpL-W6-gKE" id="nIR-oX-Gen"/>
+                <outlet property="title" destination="EdI-cj-0vH" id="AGC-EP-WOm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="menuQuestion" width="26" height="26"/>
+    </resources>
+</document>
