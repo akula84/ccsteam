@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23284BC91D7585F8008839B5 /* NSString+RCImageUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 23284BC81D7585F8008839B5 /* NSString+RCImageUrl.m */; };
 		6BBC5D931C6F11CD37D1F1BF /* libPods-Ccsteam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F62FD1441C4C28D3C06848 /* libPods-Ccsteam.a */; };
 		830769DB1E0BD0B800628E50 /* RCWeaterViewController_Private.h in Sources */ = {isa = PBXBuildFile; fileRef = 830769DA1E0BD0B800628E50 /* RCWeaterViewController_Private.h */; };
 		830769DE1E0BD11300628E50 /* RCWeaterViewController+TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 830769DD1E0BD11300628E50 /* RCWeaterViewController+TextField.m */; };
@@ -20,7 +19,6 @@
 		83076A0E1E0BFAA600628E50 /* RCWeaterViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 83076A0D1E0BFAA600628E50 /* RCWeaterViewController+UI.m */; };
 		83076A131E0BFFF900628E50 /* RCMap+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 83076A101E0BFFF900628E50 /* RCMap+CoreDataClass.m */; };
 		83076A141E0BFFF900628E50 /* RCMap+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 83076A121E0BFFF900628E50 /* RCMap+CoreDataProperties.m */; };
-		832B13671D00388600123BF2 /* RCKeyBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 832B13661D00388600123BF2 /* RCKeyBoardManager.m */; };
 		832D1D901D081F0B00E12FF1 /* API+Creating.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D1D7C1D081F0B00E12FF1 /* API+Creating.m */; };
 		832D1D911D081F0B00E12FF1 /* API+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D1D7D1D081F0B00E12FF1 /* API+File.m */; };
 		832D1D921D081F0B00E12FF1 /* API+ReplyHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D1D7E1D081F0B00E12FF1 /* API+ReplyHandling.m */; };
@@ -62,15 +60,12 @@
 		C7E750FC1CC511FF00556C6C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E750FB1CC511FF00556C6C /* SystemConfiguration.framework */; };
 		C7E750FE1CC5120600556C6C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E750FD1CC5120600556C6C /* libz.tbd */; };
 		C7E751001CC5121100556C6C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E750FF1CC5121100556C6C /* libc++.tbd */; };
-		C7F61F681CF58B27006ED49A /* NSString+More.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F61F671CF58B27006ED49A /* NSString+More.m */; };
 		C7FBBC001CCA62C800950CC2 /* RCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FBBBDD1CCA62C800950CC2 /* RCBaseModel.m */; };
 		C7FBBC011CCA62C800950CC2 /* RCBaseModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FBBBDF1CCA62C800950CC2 /* RCBaseModel+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14F62FD1441C4C28D3C06848 /* libPods-Ccsteam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ccsteam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23284BC71D7585F8008839B5 /* NSString+RCImageUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RCImageUrl.h"; sourceTree = "<group>"; };
-		23284BC81D7585F8008839B5 /* NSString+RCImageUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RCImageUrl.m"; sourceTree = "<group>"; };
 		2A9C10BA6DA3985778D29D7B /* Pods-Ccsteam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ccsteam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ccsteam/Pods-Ccsteam.release.xcconfig"; sourceTree = "<group>"; };
 		68711B9917484304B4C55F62 /* Pods-Ccsteam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ccsteam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ccsteam/Pods-Ccsteam.debug.xcconfig"; sourceTree = "<group>"; };
 		830769DA1E0BD0B800628E50 /* RCWeaterViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWeaterViewController_Private.h; path = WeaterViewController/RCWeaterViewController_Private.h; sourceTree = "<group>"; };
@@ -91,8 +86,6 @@
 		83076A101E0BFFF900628E50 /* RCMap+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RCMap+CoreDataClass.m"; path = "Map/RCMap+CoreDataClass.m"; sourceTree = "<group>"; };
 		83076A111E0BFFF900628E50 /* RCMap+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RCMap+CoreDataProperties.h"; path = "Map/RCMap+CoreDataProperties.h"; sourceTree = "<group>"; };
 		83076A121E0BFFF900628E50 /* RCMap+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RCMap+CoreDataProperties.m"; path = "Map/RCMap+CoreDataProperties.m"; sourceTree = "<group>"; };
-		832B13651D00388600123BF2 /* RCKeyBoardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCKeyBoardManager.h; path = KeyBoardManager/RCKeyBoardManager.h; sourceTree = "<group>"; };
-		832B13661D00388600123BF2 /* RCKeyBoardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCKeyBoardManager.m; path = KeyBoardManager/RCKeyBoardManager.m; sourceTree = "<group>"; };
 		832D1D7C1D081F0B00E12FF1 /* API+Creating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "API+Creating.m"; sourceTree = "<group>"; };
 		832D1D7D1D081F0B00E12FF1 /* API+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "API+File.m"; sourceTree = "<group>"; };
 		832D1D7E1D081F0B00E12FF1 /* API+ReplyHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "API+ReplyHandling.m"; sourceTree = "<group>"; };
@@ -165,8 +158,6 @@
 		C7E750FB1CC511FF00556C6C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C7E750FD1CC5120600556C6C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		C7E750FF1CC5121100556C6C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		C7F61F661CF58B27006ED49A /* NSString+More.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+More.h"; sourceTree = "<group>"; };
-		C7F61F671CF58B27006ED49A /* NSString+More.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+More.m"; sourceTree = "<group>"; };
 		C7FBBBDC1CCA62C800950CC2 /* RCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCBaseModel.h; sourceTree = "<group>"; };
 		C7FBBBDD1CCA62C800950CC2 /* RCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCBaseModel.m; sourceTree = "<group>"; };
 		C7FBBBDE1CCA62C800950CC2 /* RCBaseModel+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCBaseModel+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -250,15 +241,6 @@
 				83076A031E0BF68800628E50 /* RCWeather+CoreDataProperties.m */,
 			);
 			name = Weater;
-			sourceTree = "<group>";
-		};
-		832B13641D00386600123BF2 /* KeyBoardManager */ = {
-			isa = PBXGroup;
-			children = (
-				832B13651D00388600123BF2 /* RCKeyBoardManager.h */,
-				832B13661D00388600123BF2 /* RCKeyBoardManager.m */,
-			);
-			name = KeyBoardManager;
 			sourceTree = "<group>";
 		};
 		832D1D7A1D081EF600E12FF1 /* API */ = {
@@ -433,7 +415,6 @@
 				83BB3A571CFBE7C1008F16FA /* Base objects extensions */,
 				83BB3A671CFBEA54008F16FA /* Constants */,
 				83E4DDF81D0A883000EAED95 /* CounterTime */,
-				832B13641D00386600123BF2 /* KeyBoardManager */,
 				83BB3A5C1CFBE8AC008F16FA /* Reachability */,
 			);
 			path = Helpers;
@@ -443,7 +424,6 @@
 			isa = PBXGroup;
 			children = (
 				83BB3A611CFBE9CB008F16FA /* NSObject */,
-				83BB3A651CFBEA0D008F16FA /* NSString */,
 				83BB3A691CFBEA89008F16FA /* UIColor */,
 				83BB3A661CFBEA1D008F16FA /* UIViewController */,
 			);
@@ -470,17 +450,6 @@
 				836007B11E0B7FA100B3355E /* NSObject+SingletonObject.m */,
 			);
 			path = NSObject;
-			sourceTree = "<group>";
-		};
-		83BB3A651CFBEA0D008F16FA /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-				C7F61F661CF58B27006ED49A /* NSString+More.h */,
-				C7F61F671CF58B27006ED49A /* NSString+More.m */,
-				23284BC71D7585F8008839B5 /* NSString+RCImageUrl.h */,
-				23284BC81D7585F8008839B5 /* NSString+RCImageUrl.m */,
-			);
-			path = NSString;
 			sourceTree = "<group>";
 		};
 		83BB3A661CFBEA1D008F16FA /* UIViewController */ = {
@@ -737,7 +706,6 @@
 				83076A0E1E0BFAA600628E50 /* RCWeaterViewController+UI.m in Sources */,
 				832D1D901D081F0B00E12FF1 /* API+Creating.m in Sources */,
 				842933A41CB681AE001198DE /* main.m in Sources */,
-				C7F61F681CF58B27006ED49A /* NSString+More.m in Sources */,
 				832D1DA41D081FD400E12FF1 /* AWMissedProperties.m in Sources */,
 				C72C53E11CC4C53D00916668 /* NSObject+ClassName.m in Sources */,
 				830769FF1E0BF62E00628E50 /* RCMain+CoreDataProperties.m in Sources */,
@@ -753,12 +721,10 @@
 				84619DAD1CC7B7D500EEBE50 /* Reachability.m in Sources */,
 				832D1D991D081F0B00E12FF1 /* PaginationAPI.m in Sources */,
 				832D1D911D081F0B00E12FF1 /* API+File.m in Sources */,
-				832B13671D00388600123BF2 /* RCKeyBoardManager.m in Sources */,
 				83076A041E0BF68800628E50 /* RCWeather+CoreDataClass.m in Sources */,
 				832D1D971D081F0B00E12FF1 /* DeleteAPI.m in Sources */,
 				830769FE1E0BF62E00628E50 /* RCMain+CoreDataClass.m in Sources */,
 				C7FBBC001CCA62C800950CC2 /* RCBaseModel.m in Sources */,
-				23284BC91D7585F8008839B5 /* NSString+RCImageUrl.m in Sources */,
 				832D1D951D081F0B00E12FF1 /* API.m in Sources */,
 				830769E11E0BDA9700628E50 /* RCWeaterViewController+Tap.m in Sources */,
 				832D1D961D081F0B00E12FF1 /* CachingAPI.m in Sources */,
