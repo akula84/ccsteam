@@ -1,1 +1,0 @@
-../../../DFContinuousForceTouchGestureRecognizer/Pod/Classes/DFContinuousForceTouchGestureRecognizer.h

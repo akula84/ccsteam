@@ -31,9 +31,11 @@
 }
 
 - (void)sendToServer{
+    __weak __typeof__(self) weakSelf = self;
     [RCGetWeater withObject:self.parameters completion:^(id reply, NSError *error, BOOL *handleError) {
+        __strong __typeof__(weakSelf) strongSelf = weakSelf;
         if (reply != NULL) {
-            [self prepareMap:reply];
+            [strongSelf prepareMap:reply];
         }
     }];
 }
