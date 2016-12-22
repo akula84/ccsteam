@@ -8,7 +8,6 @@
 
 @interface UIColor (RCColor)
 
-+ (UIColor *)purpleRCColor;
-+ (UIColor *)orangeRCColor;
++ (UIColor *)purpleBlueBar;
 
 @end

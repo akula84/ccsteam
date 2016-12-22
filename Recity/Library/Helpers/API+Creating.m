@@ -59,8 +59,12 @@
     // Prevent appending empty parameters
     if (![parameters isFull]) {
         parameters = nil;
+    }else {
+        NSMutableDictionary *param = [NSMutableDictionary dictionaryWithDictionary:parameters];
+        param[@"appid"] = token;
+        parameters = [NSDictionary dictionaryWithDictionary:param];
     }
-
+    
     request = [self requestWithMethod:method
                                  path:path
                            parameters:parameters];
@@ -68,12 +72,6 @@
     if ([bodyParameters isFull]) {
         NSData *httpBodyData = [bodyParameters dataUsingEncoding:NSUTF8StringEncoding];
         [request setHTTPBody:httpBodyData];
-    }
-    
-    NSString *token = [AppState sharedInstance].user.authorizationToken;
-    if (token.length > 0) {
-        NSString *authValue = [NSString stringWithFormat:@"Bearer %@", token];
-        [request setValue:authValue forHTTPHeaderField:@"Authorization"];
     }
     return request;
 }

@@ -12,14 +12,12 @@
 
 @implementation UIColor (RCColor)
 
-+ (UIColor *)purpleRCColor
-{
-    return [self colorWithID:_cmd andRed:46 Green:49 Blue:146];
++ (UIColor *)purpleBlueBar{
+    return [self colorWithID:_cmd andRed:8 Green:29 Blue:47];
 }
 
-+ (UIColor *)orangeRCColor
-{
-    return [self colorWithID:_cmd andRed:244 Green:142 Blue:41];
++ (UIColor *)purpleBlueView{
+    return [self colorWithID:_cmd andRed:7 Green:34 Blue:55];
 }
 
 // Color utils

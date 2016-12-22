@@ -6,30 +6,21 @@
 //  Copyright © 2016 Recity. All rights reserved.
 //
 
-#ifndef Recity_pch
-#define Recity_pch
+#ifndef Ccsteam_pch
+#define Ccsteam_pch
 
     #import "RCConstants.h"
     #import <MagicalRecord/MagicalRecord.h>
-    #import "Utils.h"
     #import "isFull.h"
     #import <extobjc.h>
+    #import <UIKit/UIKit.h>
 
-    #import "RCTransformer.h"
     #import "AppDelegate.h"
-    #import "AppState.h"
 
-    #import "UIViewController+Storyboard.h"
-    #import "UIView+More.h"
-    #import "UICollectionViewCell+More.h"
-    #import "UITableViewCell+More.h"
     #import "NSObject+ClassName.h"
-    #import "NSArray+More.h"
-    #import "UIImageView+SDWebImageMore.h"
-    #import "NSDate+More.h"
-    #import "UIColor+RCScheme.h"
-    #import "NSString+More.h"
-    #import "NSString+RCImageUrl.h"
-
+    #import "AppProtection.h"
+    #import "NSObject+SingletonObject.h"
+    #import "UIViewController+Utils.h"
+    #import "UIColor+RCColor.h"
 
 #endif /* Recity_pch */

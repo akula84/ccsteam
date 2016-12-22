@@ -9,8 +9,6 @@
 #import "API_Protected.h"
 
 #import <isFull.h>
-#import "RCSignInAPI.h"
-#import "AppState.h"
 #import "AppDelegate.h"
 
 @implementation API (ReplyHandling)
@@ -47,7 +45,7 @@
     }
     NSHTTPURLResponse *response = (NSHTTPURLResponse *)sessionTask.response;
     if (response.statusCode == 401) {
-        [self reAuthorizeUser];
+       // [self reAuthorizeUser];
     } else {
         if (shouldUseDefaultErrorHandler) {
             [self showError:error];
@@ -55,22 +53,6 @@
     }
     [self apiDidEnd];
     [[AppDelegate sharedInstance] setNetworkActivityIndicatorVisible:NO];
-}
-
-- (void)reAuthorizeUser
-{
-    AppState *state = [AppState sharedInstance];
-    NSString *login = state.user.login;
-    NSString *savedUserPassword = [AppState savedUserPassword];
-    if (!login) {return;}
-    if (!savedUserPassword) {return;}
-    NSDictionary *object =@{kLogin:login,
-                            kPassword:savedUserPassword};
-   [RCSignInAPI withObject:object completion:^(id reply, NSError *error, BOOL *handleError) {
-        if (!error) {
-            [self sendRequest];
-        }
-    }];
 }
 
 - (void)showError:(NSError *)error

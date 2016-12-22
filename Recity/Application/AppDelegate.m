@@ -7,14 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
-#import "RCLoginViewController.h"
-#import "RCSearchManager.h"
-/*
-#import "RCKeyBoardManager.h"
-
-#import <IQKeyboardManager/IQKeyboardManager.h>
-*/
+#import "RCRouter.h"
 
 @implementation AppDelegate
 
@@ -22,36 +15,24 @@
     return (AppDelegate *)[UIApplication sharedApplication].delegate;
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-
-    [MagicalRecord setupAutoMigratingCoreDataStack];
-    /*
-    [RCKeyBoardManager shared];
-    
-    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
-    */
-    UIViewController *vc  = [[UIViewController alloc] init];
-    UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    view.backgroundColor = [UIColor whiteColor];
-    vc.view = view;
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
-    nc.navigationBarHidden = YES;
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
-    
-    [self.window setRootViewController:nc];
-    [self.window makeKeyAndVisible];
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    [self magicalRecordSetup];
+    [self globalSetup];
+    [RCRouter showWeater];
     return YES;
 }
 
-- (void)medicalOffLog
-{
+- (void)globalSetup{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor purpleBlueBar]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+}
+
+- (void)magicalRecordSetup{
+    [MagicalRecord setupAutoMigratingCoreDataStack];
     [MagicalRecord setLoggingLevel:MagicalRecordLoggingLevelOff];
 }
-- (void)setNetworkActivityIndicatorVisible:(BOOL)setVisible
-{
+
+- (void)setNetworkActivityIndicatorVisible:(BOOL)setVisible{
     static NSInteger NumberOfCallsToSetVisible = 0;
     if (setVisible)
         NumberOfCallsToSetVisible++;

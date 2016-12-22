@@ -7,7 +7,6 @@
 
 #import "GetAPI.h"
 #import "API_Protected.h"
-#import "NSDate+Utils.h"
 
 @implementation GetAPI
 

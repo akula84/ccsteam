@@ -20,5 +20,5 @@ target 'Ccsteam' do
   pod 'isFull', '~> 0.0.2'                        #https://github.com/alkozin/isFull
   pod 'PureLayout','~> 3.0.1'                     #https://github.com/PureLayout/PureLayout
   pod 'Raygun4iOS'
-
+  pod 'Fabric'
 end
