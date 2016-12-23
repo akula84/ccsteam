@@ -45,6 +45,7 @@
 		834D80E91CFD338A00525CEC /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 834D80E81CFD338A00525CEC /* NSObject+Utils.m */; };
 		836007B21E0B7FA100B3355E /* NSObject+SingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 836007B11E0B7FA100B3355E /* NSObject+SingletonObject.m */; };
 		836007B61E0B7FF100B3355E /* AppProtection.m in Sources */ = {isa = PBXBuildFile; fileRef = 836007B51E0B7FF100B3355E /* AppProtection.m */; };
+		838541981E0CCC7B0053A0FD /* CcsteamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 838541971E0CCC7B0053A0FD /* CcsteamTests.m */; };
 		83C8423E1D0559150051B007 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C8423D1D0559150051B007 /* UIViewController+Utils.m */; };
 		842933A41CB681AE001198DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842933A31CB681AE001198DE /* main.m */; };
 		842933A71CB681AE001198DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842933A61CB681AE001198DE /* AppDelegate.m */; };
@@ -62,6 +63,16 @@
 		C7FBBC001CCA62C800950CC2 /* RCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FBBBDD1CCA62C800950CC2 /* RCBaseModel.m */; };
 		C7FBBC011CCA62C800950CC2 /* RCBaseModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FBBBDF1CCA62C800950CC2 /* RCBaseModel+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8385419A1E0CCC7B0053A0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842933971CB681AE001198DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8429339E1CB681AE001198DE;
+			remoteInfo = Ccsteam;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		14F62FD1441C4C28D3C06848 /* libPods-Ccsteam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ccsteam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +143,9 @@
 		836007B11E0B7FA100B3355E /* NSObject+SingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SingletonObject.m"; sourceTree = "<group>"; };
 		836007B41E0B7FF100B3355E /* AppProtection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppProtection.h; path = Utils/Singleton/AppProtection/AppProtection.h; sourceTree = "<group>"; };
 		836007B51E0B7FF100B3355E /* AppProtection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppProtection.m; path = Utils/Singleton/AppProtection/AppProtection.m; sourceTree = "<group>"; };
+		838541951E0CCC7B0053A0FD /* CcsteamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CcsteamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		838541971E0CCC7B0053A0FD /* CcsteamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CcsteamTests.m; sourceTree = "<group>"; };
+		838541991E0CCC7B0053A0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C8423C1D0559150051B007 /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
 		83C8423D1D0559150051B007 /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
 		8429339F1CB681AE001198DE /* Ccsteam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ccsteam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +177,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		838541921E0CCC7B0053A0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8429339C1CB681AE001198DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,6 +360,15 @@
 			name = AppProtection;
 			sourceTree = "<group>";
 		};
+		838541961E0CCC7B0053A0FD /* CcsteamTests */ = {
+			isa = PBXGroup;
+			children = (
+				838541971E0CCC7B0053A0FD /* CcsteamTests.m */,
+				838541991E0CCC7B0053A0FD /* Info.plist */,
+			);
+			path = CcsteamTests;
+			sourceTree = "<group>";
+		};
 		83BB3A4A1CFBE4FC008F16FA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +530,7 @@
 			isa = PBXGroup;
 			children = (
 				842933A11CB681AE001198DE /* Ccsteam */,
+				838541961E0CCC7B0053A0FD /* CcsteamTests */,
 				11569EEB5D7F4DFC72DB3F32 /* Frameworks */,
 				842933A01CB681AE001198DE /* Products */,
 				B5A8DC1DC152E692A6125E60 /* Pods */,
@@ -510,6 +541,7 @@
 			isa = PBXGroup;
 			children = (
 				8429339F1CB681AE001198DE /* Ccsteam.app */,
+				838541951E0CCC7B0053A0FD /* CcsteamTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -540,6 +572,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		838541941E0CCC7B0053A0FD /* CcsteamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8385419E1E0CCC7B0053A0FD /* Build configuration list for PBXNativeTarget "CcsteamTests" */;
+			buildPhases = (
+				838541911E0CCC7B0053A0FD /* Sources */,
+				838541921E0CCC7B0053A0FD /* Frameworks */,
+				838541931E0CCC7B0053A0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8385419B1E0CCC7B0053A0FD /* PBXTargetDependency */,
+			);
+			name = CcsteamTests;
+			productName = CcsteamTests;
+			productReference = 838541951E0CCC7B0053A0FD /* CcsteamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8429339E1CB681AE001198DE /* Ccsteam */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 842933B91CB681AF001198DE /* Build configuration list for PBXNativeTarget "Ccsteam" */;
@@ -571,6 +621,12 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Recity;
 				TargetAttributes = {
+					838541941E0CCC7B0053A0FD = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5874DUL5Z2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8429339E1CB681AE001198DE;
+					};
 					8429339E1CB681AE001198DE = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 5874DUL5Z2;
@@ -596,11 +652,19 @@
 			projectRoot = "";
 			targets = (
 				8429339E1CB681AE001198DE /* Ccsteam */,
+				838541941E0CCC7B0053A0FD /* CcsteamTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		838541931E0CCC7B0053A0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8429339D1CB681AE001198DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -675,6 +739,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		838541911E0CCC7B0053A0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838541981E0CCC7B0053A0FD /* CcsteamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8429339B1CB681AE001198DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -730,6 +802,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8385419B1E0CCC7B0053A0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8429339E1CB681AE001198DE /* Ccsteam */;
+			targetProxy = 8385419A1E0CCC7B0053A0FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		842933B31CB681AF001198DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -743,6 +823,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8385419C1E0CCC7B0053A0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5874DUL5Z2;
+				INFOPLIST_FILE = CcsteamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Artem-Kulagin.CcsteamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ccsteam.app/Ccsteam";
+			};
+			name = Debug;
+		};
+		8385419D1E0CCC7B0053A0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CcsteamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Artem-Kulagin.CcsteamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ccsteam.app/Ccsteam";
+			};
+			name = Release;
+		};
 		842933B71CB681AF001198DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE630FD31D0A699000CD5673 /* Warnings.xcconfig */;
@@ -923,6 +1035,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8385419E1E0CCC7B0053A0FD /* Build configuration list for PBXNativeTarget "CcsteamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8385419C1E0CCC7B0053A0FD /* Debug */,
+				8385419D1E0CCC7B0053A0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8429339A1CB681AE001198DE /* Build configuration list for PBXProject "Ccsteam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

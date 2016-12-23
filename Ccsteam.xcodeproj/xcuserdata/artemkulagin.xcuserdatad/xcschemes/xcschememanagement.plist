@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Ccsteam 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>Ccsteam.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>838541941E0CCC7B0053A0FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8429339E1CB681AE001198DE</key>
 		<dict>
 			<key>primary</key>
